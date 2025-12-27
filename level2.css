@@ -1,0 +1,107 @@
+/* === Quiz Layout Styles === */
+
+/* Ensure the body takes full height so backgrounds look right */
+body {
+    min-height: 100vh;
+    /* A dark overlay tint so white text pops on any background image */
+    background-color: rgba(0,0,0,0.7); 
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.quiz-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header with score and back button */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+.back-btn {
+    text-decoration: none;
+    color: #ffd700; /* Gold color */
+    font-weight: bold;
+}
+#hud {
+    display: flex;
+    gap: 20px;
+}
+
+/* The main white box holding the question */
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #333; /* Dark text for inside the white box */
+    text-align: center;
+}
+
+/* Optional Question Image */
+.q-img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #583d72;
+}
+
+.question-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* Grid for answer buttons (2x2 layout) */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Styles for the answer buttons */
+.answer-btn {
+    background-color: #583d72; /* Wizard purple */
+    color: white;
+    border: 2px solid #583d72;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.answer-btn:hover {
+    background-color: #7a559a;
+    transform: translateY(-3px);
+}
+
+/* Styles JS will add when an answer is chosen */
+.answer-btn.correct {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+}
+
+.answer-btn.wrong {
+    background-color: #dc3545; /* Red */
+    border-color: #dc3545;
+}
+
+/* Utility class to hide things */
+.hidden {
+    display: none;
+}
+
+/* Specific background for Level 2 (e.g., a wizard's library) */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz | Game</title>
+
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+<img src="logo.jpg" class="logo"> 
+<img src="code.jpg" class="logo1">
+
+            <h1 class="logo-text">Math Quiz Game</h1>
+            <nav class="navbar">
+                <a href="about.html" class="about">About</a>
+            </nav>
+        </header>
+        
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="game">
+            <div class="game-content">
+                <h1>Welcome to the Math Quiz!</h1>
+                <p>Test your skills and have fun.</p>
+                <button id="start-btn" class="start-btn">Start Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Level Selection Popup -->
+    <div id="popup-info" class="popup-info hidden">
+        <h2>Select a Level</h2>
+        <div class="btn-group">
+            <div>
+                <!-- Link to another_file.html --> 
+                <a href="level1.html" class="level-btn">Level 7-8(Easy)</a>
+                <link href="level1.css" class="level.css">
+            </div>
+            <div>
+                <a href="level2.html" class="level-btn">Level 8-9 (Medium)</a>
+                <link href="level2.css" class="level2.css">
+                <!-- Link to another_file.html -->
+            </div>
+            <div>
+                <a href="level3.html" class="level-btn">Level 9-10 (Hard)</a>
+                <link href="level3.css" class="level4.css">
+                <!-- Link to another_file.html --> 
+            </div>
+            <div>
+                <a href="level4.html" class="level-btn">Level 10-11 (Extreme)</a>
+                <link href="level4.css" class="level4.css">
+                <!-- Link to another_file.html --> 
+            </div>
+        </div>
+        <div class="btn-group">
+            <button id="exit-btn" class="exit-btn">Exit</button>
+        </div>
+    </div>
+
+    <!-- The main script that controls everything -->
+    <script src="script.js"></script>
+</body>
+</html>
